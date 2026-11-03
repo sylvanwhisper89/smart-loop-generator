@@ -1,17 +1,29 @@
-# Smart Loop Generator
+# Smart Loop Generator (VS Code Extension)
 
-**Author:** Islam Mirajul
+**Author:** Islam Mirajul  
+**Course:** Laboratory Work No. 3 (Plugin Development)
 
-## Description
-This is a Visual Studio Code extension that helps developers quickly generate `for` and `while` loops around selected code.
+## 📌 Description
+**Smart Loop Generator** is a custom Visual Studio Code extension designed to speed up coding by automatically generating `for` and `while` loops around any selected code block. 
 
-## Features
-- Select any code snippet.
-- Open the Command Palette (`Ctrl+Shift+P`).
-- Run the command: `Smart Loop: Wrap with Loop`.
-- The plugin analyzes the selected code. If it contains the variable `i`, it wraps the code in a `for` loop. Otherwise, it wraps it in a `while` loop.
+The plugin analyzes the selected text. If the variable `i` is present, it generates a `for` loop. Otherwise, it generates a `while` loop.
 
-## How to use
-1. Select the code you want to wrap.
-2. Press `Ctrl+Shift+P`.
-3. Type `Smart Loop` and select the command.
+## ✨ Features
+- Wrap selected code in a `for` or `while` loop automatically.
+- Intelligent logic to choose the correct loop type based on the selected text.
+- Seamless integration with the VS Code Command Palette.
+
+## 🚀 How to Use
+1. Select any block of code in your editor (e.g., `console.log(i);`).
+2. Open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P` on Mac).
+3. Type **`Smart Loop`** and select **`Smart Loop: Wrap with Loop`**.
+4. The selected code will be instantly wrapped in the appropriate loop!
+
+## 🛠️ Technologies Used
+- **Language:** JavaScript / Node.js
+- **IDE:** Visual Studio Code
+- **API:** VS Code Extension API
+
+## 📂 Project Structure
+- `extension.js`: The main logic and command registration.
+- `package.json`: Extension metadata and command declaration.
